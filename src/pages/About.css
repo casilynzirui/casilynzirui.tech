@@ -1,0 +1,36 @@
+.introduction-container {
+    display: flex;
+    justify-content: flex-start; 
+    padding: 2rem; 
+    background-color: var(--background-color); 
+}
+
+.introduction-block {
+    max-width: 600px; 
+    margin-left: 4rem;
+}
+
+.introduction-title {
+    font-size: 30px; 
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin-bottom: 10px; 
+}
+
+.introduction-name {
+    font-size: 75px; 
+    color: var(--ascent-color);
+    font-family: var(--name-font);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 50px; 
+
+}
+
+.introduction-description {
+    font-size: 20px; 
+    color: var(--text-color);
+    font-family: var(--text-font);    
+    margin-bottom: 2rem; /* Space below description */
+}
+

@@ -8,7 +8,7 @@
 
 .top-bar {
     height: 40px; 
-    background-color: var(--ascent-color); 
+    background: linear-gradient(to right, var(--ascent-color), var(--background-color)); 
     width: 100%; 
     margin-bottom: 10px; 
 }
@@ -59,20 +59,41 @@
     color: var(--text-color); 
     padding: 12px 18px; 
     border-radius: 10px; 
-    border-color: var(--ascent-color);
-    border-width: 2.5px;
+    border-color: var(--background-color);
+    border-width: 2px;
     border-style: solid;
     cursor: pointer; 
-    transition: opacity 0.2s; 
+    transition: opacity 0.2s ease, background 0.3s ease, border-image-source 0.3s ease;
     display: inline-block; 
     font-family: var(--text-font);
     font-size: 18px; 
+    background: linear-gradient(45deg, #A33855, #121212); /* Default gradient */
+    background-size: 400% 400%; /* Ensures the gradient can flow */
+    animation: gradient-flow 5s ease infinite;
+    filter: brightness(1.2);  
+
 }
-  
+
+/* Hover effect for gradient flow */
 .resume-link.hovered {
-    opacity: 0.5; 
+    animation: gradient-flow 5s ease infinite; /* Animate the gradient flow */
+    opacity: 0.5; /* Reduce opacity when hovered */
 }
-  
+
+/* Active state for opacity change */
 .resume-link:active {
-    opacity: 0.25; 
+    opacity: 0.25; /* Make button more transparent when clicked */
+}
+
+/* Keyframes to animate the gradient */
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

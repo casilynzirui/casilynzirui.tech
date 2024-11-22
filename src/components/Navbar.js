@@ -15,10 +15,10 @@ const Navbar = () => {
         </h1>
         <ul className="nav-links">
           <li>
-            <Link to="/" className="link">About</Link>
+            <Link to="/about" className="link">About</Link>
           </li>
           <li>
-            <Link to="/about" className="link">Experience</Link>
+            <Link to="/experiences" className="link">Experience</Link>
           </li>
           <li>
             <Link to="/projects" className="link">Projects</Link>
@@ -32,7 +32,6 @@ const Navbar = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={() => {
-                  // Navigate to resume page, use window.location or a router if needed
                   window.location.href = '/resume';
                 }}
               >
