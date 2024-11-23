@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import mochicat from '../assets/mochicat.png';
+
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false); // Initialize state
@@ -10,21 +12,24 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="top-bar"></div>
       <div className="header-bar">
-        <h1 className="logo">
-          <Link to="/" className="name">Casilynzirui</Link>
-        </h1>
+        <div className="mochicat-container">
+          <Link to="/" className="name">
+            <img src={mochicat} className="mochicat" />
+          </Link>
+        </div>
+          
         <ul className="nav-links">
           <li>
-            <Link to="/about" className="link">About</Link>
+            <Link to="about" className="link">About</Link>
           </li>
           <li>
-            <Link to="/experiences" className="link">Experience</Link>
+            <Link to="experience" className="link">Experience</Link>
           </li>
           <li>
-            <Link to="/projects" className="link">Projects</Link>
+            <Link to="projects" className="link">Projects</Link>
           </li>
           <li>
-            <Link to="/contact" className="link">Contact</Link>
+            <Link to="contact" className="link">Contact</Link>
           </li>
           <li>
             <div
@@ -32,7 +37,7 @@ const Navbar = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={() => {
-                  window.location.href = '/resume';
+                  window.open('/casilyn-soong.pdf', '_blank');
                 }}
               >
                 Resume

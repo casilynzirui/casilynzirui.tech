@@ -1,16 +1,39 @@
 import React from 'react';
 import './About.css';
+import me from '../assets/me.jpg';
 
 
 const About = () => {
     return (
-        <section className="introduction-container">
-            <p className="introduction-description">
-                I am an aspiring creative developer specializing in mobile and web development. My journey began with a deep fascination for technology and design, and I’ve since honed my skills to create seamless, user-centered experiences. I thrive on blending the worlds of front-end and back-end development, leveraging modern tools to build scalable and visually stunning applications.
+        <section id="about" className="about-container">
 
-                With a strong foundation in coding and an eye for design, I enjoy the challenge of solving complex problems with creative solutions. Whether it's crafting mobile apps or responsive websites, I’m always excited to push the boundaries of what technology can do to improve people's lives.  
-            </p>
-        </section>
+            <div className="photo-container">
+            <img src={me} className="photo-me" />
+
+            </div>
+            <div className="about-block">
+                <p className="about-title">About me</p>
+                <p className="about-description">
+                    <p>
+                        I’m a Computer Science graduate specializing in mobile and web development. 
+                        My journey into tech began after my diploma, where I ventured down a new path and developed a passion for creating innovative digital solutions.
+                    </p>
+                    <p>
+                        Beyond programming, I'm a competitive pool player and enjoy occasional bouldering sessions for a challenging fun. 
+                    </p>
+                    <p>
+                        Let's connect!
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/casilynzirui" target="_blank" rel="noopener noreferrer">
+                            <button className="linkedin-button">LinkedIn</button>
+                        </a>
+                    </p>
+                </p>
+
+            </div>
+      </section>
+        
     );
 };
 
