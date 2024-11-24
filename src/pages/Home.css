@@ -1,0 +1,7 @@
+.main-content {
+    display: flex; 
+    padding-top: 10rem;
+    flex-direction: row;  /* Ensures content is arranged in a row */
+    justify-content: center;  /* Center items horizontally */
+    align-items: center;  /* Center items vertically */
+}

@@ -9,10 +9,6 @@
 
 }
 
-.main-content {
-  display: flex; 
-}
-
 body {
   background-color: var(--background-color);
 }
@@ -20,3 +16,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#about, #experience, #projects, #contact {
+  padding-top: 150px; /* Adjust this value to ensure enough space */
+  scroll-margin-top: 100px; /* This ensures proper scrolling behavior */
+}
+
+

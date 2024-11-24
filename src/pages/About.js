@@ -12,18 +12,21 @@ const About = () => {
 
             </div>
             <div className="about-block">
-                <p className="about-title">About me</p>
+                <p className="about-title">안녕</p>
                 <p className="about-description">
                     <p>
-                        I’m a Computer Science graduate specializing in mobile and web development. 
-                        My journey into tech began after my diploma, where I ventured down a new path and developed a passion for creating innovative digital solutions.
+                        My journey into tech began after completing my diploma, where I transitioned into computer science and discovered a strong passion for creating innovative, user-centered digital solutions. 
+                        Currently working on mobile and web development, combining technical expertise with UX design to create seamless, intuitive experiences that bridge the gap between technology and user needs.
                     </p>
+                    <br></br>
                     <p>
-                        Beyond programming, I'm a competitive pool player and enjoy occasional bouldering sessions for a challenging fun. 
+                        Beyond programming, I'm a dedicated pool player and take satisfaction in the challenge of occasional bouldering sessions. 
                     </p>
+                    <br></br>
                     <p>
                         Let's connect!
                     </p>
+                    <br></br>
                     <p>
                         <a href="https://www.linkedin.com/in/casilynzirui" target="_blank" rel="noopener noreferrer">
                             <button className="linkedin-button">LinkedIn</button>

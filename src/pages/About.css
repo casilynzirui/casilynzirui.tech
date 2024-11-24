@@ -1,21 +1,23 @@
 .about-container {
     display: flex;
-    justify-content: center; /* Centers both blocks horizontally */
-    align-items: center; /* Centers both blocks vertically */
-    gap: 5rem; /* Adds space between the two blocks */
-    padding: 2rem;
+    justify-content: center; 
+    align-items: center; 
+    gap: 8rem;  
+    padding: 3rem;
+    padding-top: 8rem;
     background-color: var(--background-color);
-    max-width: 100%; /* Limits the overall width of the container */
-    margin: 0 auto; /* Centers the container itself on the page */
+    max-width: 100%; 
+    margin: 0 auto; 
+
 }
 
 .about-block {
-    max-width: 550px; /* Sets a limit for the width of the about block */
-    text-align: left; /* Aligns text to the left */
+    max-width: 550px; 
+    text-align: left; 
 }
 
 .about-title {
-    font-size: 23px; 
+    font-size: 22px; 
     color: var(--ascent-color);
     font-family: var(--name-font);
     font-weight: 600;
@@ -27,7 +29,7 @@
     font-size: 20px;
     color: var(--text-color);
     font-family: var(--text-font);
-    margin-bottom: 2rem; /* Adds space below the description */
+    margin-bottom: 2rem; 
 }
 
 .photo-container {

@@ -32,4 +32,6 @@
     font-family: var(--text-font);
     color: var(--ascent-color);
     font-style: italic;
+    padding-top: 2.5rem;
+
 }

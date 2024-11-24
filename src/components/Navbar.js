@@ -1,35 +1,41 @@
 // src/Navbar.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 import mochicat from '../assets/mochicat.png';
 
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false); // Initialize state
+  const [isActiveLink, setIsActiveLink] = useState('');
+
+  const handleLinkClick = (link) => {
+    setIsActiveLink(link);
+  };
 
   return (
     <nav className="navbar">
       <div className="top-bar"></div>
       <div className="header-bar">
         <div className="mochicat-container">
-          <Link to="/" className="name">
+          <Link to="home" spy={true} smooth={true} offset={-120} duration={200} className="name">
             <img src={mochicat} className="mochicat" />
           </Link>
         </div>
           
         <ul className="nav-links">
           <li>
-            <Link to="about" className="link">About</Link>
+            <Link to="about" spy={true} smooth={true} offset={-50} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`} >About</Link>
           </li>
           <li>
-            <Link to="experience" className="link">Experience</Link>
+            <Link to="experience" spy={true} smooth={true} offset={-100} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Experience</Link>
           </li>
           <li>
-            <Link to="projects" className="link">Projects</Link>
+            <Link to="projects" spy={true} smooth={true} offset={50} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Projects</Link>
           </li>
           <li>
-            <Link to="contact" className="link">Contact</Link>
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Contact</Link>
           </li>
           <li>
             <div

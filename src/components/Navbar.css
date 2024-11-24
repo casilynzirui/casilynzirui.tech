@@ -1,5 +1,10 @@
 /* Navbar.css */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
     display: flex;
     flex-direction: column; 
     background: var(--background-color); 
@@ -54,6 +59,14 @@
     font-size: 18px; 
 }
 
+.nav-links .link:hover {
+    border-bottom: 2.5px solid var(--ascent-color); 
+}
+
+.nav-links .link.active {
+    border-bottom: 2px solid var(--ascent-color); 
+  }
+
 .resume-link {
     background-color: var(--background-color); 
     color: var(--text-color); 
@@ -67,25 +80,22 @@
     display: inline-block; 
     font-family: var(--text-font);
     font-size: 18px; 
-    background: linear-gradient(45deg, #A33855, #121212); /* Default gradient */
-    background-size: 400% 400%; /* Ensures the gradient can flow */
+    background: linear-gradient(45deg, #A33855, #121212); 
+    background-size: 400% 400%; 
     animation: gradient-flow 5s ease infinite;
     filter: brightness(1.2);  
 
 }
 
-/* Hover effect for gradient flow */
 .resume-link.hovered {
-    animation: gradient-flow 5s ease infinite; /* Animate the gradient flow */
-    opacity: 0.5; /* Reduce opacity when hovered */
+    animation: gradient-flow 5s ease infinite; 
+    opacity: 0.5; 
 }
 
-/* Active state for opacity change */
 .resume-link:active {
-    opacity: 0.25; /* Make button more transparent when clicked */
+    opacity: 0.25; 
 }
 
-/* Keyframes to animate the gradient */
 @keyframes gradient-flow {
     0% {
         background-position: 0% 50%;

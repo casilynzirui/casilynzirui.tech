@@ -31,6 +31,6 @@
     font-size: 20px; 
     color: var(--text-color);
     font-family: var(--text-font);    
-    margin-bottom: 2rem; /* Space below description */
+    margin-bottom: 2rem; 
 }
 

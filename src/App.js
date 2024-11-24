@@ -16,14 +16,11 @@ const App = () => {
       <div>
         <Navbar /> {/* The Navbar will be rendered globally */}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
         
       </div>
     </Router>
