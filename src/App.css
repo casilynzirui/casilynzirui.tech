@@ -26,7 +26,7 @@ html {
 }
 
 #about, #experience, #projects, #contact {
-  padding-top: 150px; /* Adjust this value to ensure enough space */
+  padding-top: 100px; /* Adjust this value to ensure enough space */
   scroll-margin-top: 100px; /* This ensures proper scrolling behavior */
 }
 

@@ -4,11 +4,8 @@
     align-items: center; 
     gap: 8rem;  
     padding: 3rem;
-    padding-top: 8rem;
-    background-color: var(--background-color);
     max-width: 100%; 
-    margin: 0 auto; 
-
+    height: 100vh;
 }
 
 .about-block {
@@ -67,4 +64,8 @@
   
 .linkedin-button:hover {
     background-color: #005E8C; 
+}
+
+.space-between {
+    padding-top: 10px;
 }

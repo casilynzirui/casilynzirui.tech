@@ -1,5 +1,5 @@
 // src/App.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'; 
 import Navbar from './components/Navbar';
@@ -11,6 +11,12 @@ import Contact from './pages/Contact';
 
 
 const App = () => {
+  /*
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+  */
+
   return (
     <Router>
       <div>

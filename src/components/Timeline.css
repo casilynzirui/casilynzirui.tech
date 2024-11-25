@@ -1,0 +1,76 @@
+
+h3, h5, p {
+    font-family: var(--text-font);
+}
+
+.title-container {
+    display: flex; /* Use flexbox to align the title, subtitle, and image */
+    justify-content: space-between; /* Space out text and image */
+    align-items: center; /* Center vertically */
+    margin-top: -35px;
+}
+  
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack the title and subtitle vertically */
+}
+
+.timeline-icon {
+    width: 100px;  /* Adjust the size of the image */
+    height: 100px; /* Adjust the size of the image */
+    object-fit: contain; /* Ensure the image is contained within the box */
+    padding-left: 50px; /* Add some space between the text and the icon */
+}
+  
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+        0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 2.5em 2.5em !important;
+}
+
+.vertical-timeline-element.work .vertical-timeline-element-content, .vertical-timeline-element.school .vertical-timeline-element-content {
+    background-color: var(--text-color);
+}
+
+.vertical-timeline::before {
+    background-color: var(--text-color) !important; 
+}
+
+
+#description {
+    margin: -0.5em 0 2em 0;
+}
+
+.button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+.workButton {
+    background-color: var(--ascent-color);
+}
+
+.workButton:hover {
+    background-color: #892D49;
+}
+
+.schoolButton {
+    background-color: var(--ascent-color);
+}
+
+.schoolButton:hover {
+    background-color: #892D49;
+}
+
+@media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: var(--text-color);
+    }
+}
+

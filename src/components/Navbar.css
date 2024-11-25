@@ -80,7 +80,7 @@
     display: inline-block; 
     font-family: var(--text-font);
     font-size: 18px; 
-    background: linear-gradient(45deg, #A33855, #121212); 
+    background: linear-gradient(45deg, var(--ascent-color), var(--background-color)); 
     background-size: 400% 400%; 
     animation: gradient-flow 5s ease infinite;
     filter: brightness(1.2);  
