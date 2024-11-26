@@ -50,6 +50,8 @@
     margin-right: 40px; 
     align-items: center; 
     height: 100%; 
+    cursor: pointer; 
+
 }
 
 .link {
@@ -90,6 +92,7 @@
 .resume-link.hovered {
     animation: gradient-flow 5s ease infinite; 
     opacity: 0.5; 
+    cursor: pointer;
 }
 
 .resume-link:active {
@@ -117,4 +120,38 @@
     height: 50px; 
     width: 100%; 
     margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    .link {
+        color: var(--background-color); 
+    }
+
+    .nav-links .link:hover {
+        border-bottom: 2.5px solid var(--background-color); 
+    }
+    
+    .nav-links .link.active {
+        border-bottom: 2px solid var(--background-color); 
+    }
+
+    .resume-link {
+        background-color: var(--background-color); 
+        color: var(--background-color); 
+        padding: 12px 18px; 
+        border-radius: 10px; 
+        border-color: var(--background-color);
+        border-width: 2px;
+        border-style: solid;
+        cursor: pointer; 
+        transition: opacity 0.2s ease, background 0.3s ease, border-image-source 0.3s ease;
+        display: inline-block; 
+        font-family: var(--text-font);
+        font-size: 18px; 
+        background: linear-gradient(45deg, var(--background-color), var(--background-color)); 
+        background-size: 400% 400%; 
+        animation: gradient-flow 5s ease infinite;
+        filter: brightness(1.2);  
+    
+    }
 }

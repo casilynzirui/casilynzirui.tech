@@ -49,3 +49,16 @@
 .project-link:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+}

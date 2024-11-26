@@ -8,29 +8,30 @@ import About from './pages/About';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 
 const App = () => {
-  /*
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
-  */
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
-  return (
-    <Router>
-      <div>
-        <Navbar /> {/* The Navbar will be rendered globally */}
+    return (
+        <Router>
+            <div>
+                <Navbar /> {/* The Navbar will be rendered globally */}
 
-        <Home />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-        
-      </div>
-    </Router>
-  );
+                <Home />
+                <About />
+                <Experience />
+                <Projects />
+                <Contact />
+
+                <Footer />
+                
+             </div>
+        </Router>
+    );
 };
 
 export default App;

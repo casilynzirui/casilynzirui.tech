@@ -34,3 +34,12 @@
     margin-bottom: 2rem; 
 }
 
+@media (max-width: 768px) {
+    .introduction-container {
+        justify-content: center; 
+        align-items: center;     
+        padding: 1rem;          
+        margin-right: 5rem;
+
+    }
+}

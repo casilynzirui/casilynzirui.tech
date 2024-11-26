@@ -1,33 +1,31 @@
 /* color palette */
 :root {
-  --ascent-color: #A33855;
-  --background-color: #121212;
-  --text-color: #EDEDED;
+    --ascent-color: #A33855;
+    --background-color: #121212;
+    --text-color: #EDEDED;
 
-  --text-font: 'Nunito', sans-serif;
-  --name-font: 'Lato', sans-serif;
+    --text-font: 'Nunito', sans-serif;
+    --name-font: 'Lato', sans-serif;
 
-}
+    }
 
 body {
-  background-color: var(--background-color);
+    background-color: var(--background-color);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #about, #experience, #projects, #contact {
-  padding-top: 100px; /* Adjust this value to ensure enough space */
-  scroll-margin-top: 100px; /* This ensures proper scrolling behavior */
+    padding-top: 100px; 
+    scroll-margin-top: 100px; 
 }
 
 

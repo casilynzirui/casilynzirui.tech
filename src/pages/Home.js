@@ -5,7 +5,6 @@ import Featured from '../components/Featured';
 
 
 const Home = () => {
-  
   return (
     <div id="home" className="main-content">
         <Introduction />

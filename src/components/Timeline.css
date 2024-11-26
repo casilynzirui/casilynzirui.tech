@@ -4,22 +4,22 @@ h3, h5, p {
 }
 
 .title-container {
-    display: flex; /* Use flexbox to align the title, subtitle, and image */
-    justify-content: space-between; /* Space out text and image */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     margin-top: -35px;
 }
   
 .text-container {
     display: flex;
-    flex-direction: column; /* Stack the title and subtitle vertically */
+    flex-direction: column; 
 }
 
 .timeline-icon {
-    width: 100px;  /* Adjust the size of the image */
-    height: 100px; /* Adjust the size of the image */
-    object-fit: contain; /* Ensure the image is contained within the box */
-    padding-left: 50px; /* Add some space between the text and the icon */
+    width: 100px;  
+    height: 100px; 
+    object-fit: contain; 
+    padding-left: 50px; 
 }
   
 
