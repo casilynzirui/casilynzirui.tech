@@ -3,11 +3,15 @@ h3, h5, p {
     font-family: var(--text-font);
 }
 
+h5 {
+    padding-top: 5px;
+}
+
 .title-container {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    margin-top: -35px;
+    margin-top: -30px;
 }
   
 .text-container {
@@ -16,21 +20,28 @@ h3, h5, p {
 }
 
 .timeline-icon {
-    width: 100px;  
+    width: 88px;  
     height: 100px; 
     object-fit: contain; 
     padding-left: 50px; 
 }
   
-
 .vertical-timeline-element-content {
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
         0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-    padding: 2.5em 2.5em !important;
+    padding: 2em 2em!important;
+    transition: all 0.3s ease; 
 }
 
+.vertical-timeline-element-content:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.35),  
+        0 0.6em 1.5em 0 rgba(0, 0, 0, 0.25);  
+    transform: translateY(-5px); 
+}
+
+
 .vertical-timeline-element.work .vertical-timeline-element-content, .vertical-timeline-element.school .vertical-timeline-element-content {
-    background-color: var(--text-color);
+    background-color: #FFFFFF;
 }
 
 .vertical-timeline::before {
@@ -48,6 +59,10 @@ h3, h5, p {
     border-radius: 5px;
     color: var(--text-color);
     font-family: var(--text-font);
+}
+
+.button-container {
+    margin-bottom: 10px;
 }
 
 .workButton {

@@ -48,16 +48,19 @@ const Timeline = () => {
                 </div>
                 </div>
                 <p id="description">{element.description}</p>
+                <div className="button-container">
                 {showButton && (
                 <a
                     className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                     }`}
-                    href="/"
+                    onClick={() => window.open(element.link, '_blank')}  // Dynamically open the link
+                    style={{ cursor: 'pointer' }}  // Optional: make the link look clickable
                 >
                     {element.buttonText}
                 </a>
                 )}
+                </div>
             </VerticalTimelineElement>
             );
         })}

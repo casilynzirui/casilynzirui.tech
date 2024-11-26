@@ -11,8 +11,8 @@ const Contact = () => {
                 <div className="contact-info-container">
                     <p className="contact-title">Get In Touch</p>
                     <p className="contact-detail">
-                        I'm currently seeking full-time opportunities to contribute my skills and grow in a dynamic and innovative environment. 
-                        While I specialize in mobile and web development, I'm versatile and open to exploring roles in various fields.
+                        I'm currently seeking full-time opportunities to contribute my skills and grow in a dynamic, innovative environment. 
+                        While I specialize in mobile and web development, I'm versatile, eager to expand my knowledge, and open to exploring roles in various fields.
                     </p>
                     <br></br>
                     <p className="contact-detail">

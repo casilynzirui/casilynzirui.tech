@@ -26,12 +26,12 @@ const Experience = () => {
     },
   ];
 
-  return (
-    <div id="experience" className="experience-container">
-      <p className="experience-title">My Experiences</p>
-      <Timeline />
-    </div>
-  );
+    return (
+        <div id="experience" className="experience-container">
+            <p className="experience-title">My Experiences</p>
+            <Timeline />
+        </div>
+    );
 };
 
 export default Experience;
