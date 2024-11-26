@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link to="experience" spy={true} smooth={true} offset={0} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Experience</Link>
           </li>
           <li>
-            <Link to="projects" spy={true} smooth={true} offset={50} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Projects</Link>
+            <Link to="projects" spy={true} smooth={true} offset={0} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Projects</Link>
           </li>
           <li>
             <Link to="contact" spy={true} smooth={true} offset={50} duration={200} className={`link ${isActiveLink === 'experience' ? 'active' : ''}`}>Contact</Link>
