@@ -39,6 +39,7 @@
     margin-left: 40px; 
     color: var(--background-color);
     font-family: var(--text-font);
+    cursor: pointer; 
 }
 
 .nav-links {
