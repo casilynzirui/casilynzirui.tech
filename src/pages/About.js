@@ -11,7 +11,7 @@ const About = () => {
                 <img src={me} className="photo-me" />
             </div>
             <div className="about-block">
-                <p className="about-title">안녕</p>
+                <p className="about-title">♥</p>
                     <p className="about-description">
                         I'm a recent Computer Science graduate. I transitioned into tech after completing my diploma in Biomedical Sciences, and discovered a strong passion for creating innovative, user-centered digital solutions. 
                         I'm currently working on mobile and web development, where I combine technical expertise with UX design to create seamless, intuitive experiences that bridge the gap between technology and user needs.
