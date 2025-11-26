@@ -80,7 +80,7 @@
   white-space: nowrap;
   margin-bottom: -.25em;
   padding-bottom: .25em;
-  font-family: Haffer Mono, Arial, sans-serif;
+  font-family: var(--font-geist-mono), monospace;
   position: absolute;
 }
 

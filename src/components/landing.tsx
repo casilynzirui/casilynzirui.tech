@@ -72,7 +72,7 @@ export default function Loader() {
 					</div>
 					<div className="loader__text-wrap">
 						<span data-load-text data-load-reset className="loader__text-el">Hi there!</span>
-            <span data-load-text data-load-reset className="loader__text-el">Nice to meet you</span>
+            <span data-load-text data-load-reset className="loader__text-el">It&apos;s great to have you here ✨</span>
 					</div>
 				</div>
 			</div>
@@ -110,10 +110,10 @@ export default function Loader() {
               </div>
               
               <div className="space-y-5 pt-4">
-                <div className="flex flex-wrap items-center gap-4">
+                <div className="flex flex-wrap items-center gap-3">
                   <a
                     href="https://linkedin.com/in/casilynzirui"
-                    className="group relative h-12 px-9 bg-[var(--color-button-primary)] text-white rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 hover:-translate-y-1 overflow-hidden flex items-center justify-center"
+                    className="group relative h-12 px-6.5 bg-[var(--color-button-primary)] text-white rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 hover:-translate-y-1 overflow-hidden flex items-center justify-center"
                     style={{ boxShadow: 'var(--shadow-primary)' }}
                   >
                     <span className="relative z-10">Let&apos;s Connect</span>
@@ -126,7 +126,7 @@ export default function Loader() {
                     className="group relative w-12 h-12 bg-white/80 backdrop-blur-md text-[var(--color-text-primary)] rounded-lg border transition-all duration-300 hover:-translate-y-1 border-[var(--color-border-medium)] hover:border-[var(--color-border-dark)] flex items-center justify-center"
                     style={{ boxShadow: 'var(--shadow-secondary)' }}
                   >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10">
                       <path d="M12 2.247C9.62482 2.24599 7.32683 3.09045 5.51745 4.62917C3.70808 6.16789 2.50547 8.30041 2.12495 10.6449C1.74442 12.9894 2.21083 15.3928 3.44066 17.4248C4.67049 19.4568 6.58343 20.9847 8.83701 21.735C9.33701 21.829 9.52101 21.52 9.52101 21.254C9.52101 21.017 9.51201 20.387 9.50801 19.554C6.72701 20.154 6.14001 18.212 6.14001 18.212C5.9554 17.6074 5.56062 17.0889 5.02701 16.75C4.12201 16.13 5.09801 16.142 5.09801 16.142C5.41478 16.1858 5.71737 16.3013 5.9827 16.4798C6.24803 16.6583 6.46908 16.8951 6.62901 17.172C6.7649 17.4186 6.94832 17.6359 7.16868 17.8112C7.38904 17.9866 7.64197 18.1165 7.91284 18.1935C8.18371 18.2705 8.46715 18.293 8.74679 18.2598C9.02642 18.2266 9.2967 18.1383 9.54201 18C9.58642 17.493 9.81098 17.0187 10.175 16.663C7.95401 16.413 5.62001 15.553 5.62001 11.721C5.60586 10.7289 5.97437 9.76951 6.64901 9.042C6.33796 8.18271 6.36947 7.23668 6.73701 6.4C6.73701 6.4 7.57401 6.132 9.48701 7.425C11.1232 6.97435 12.8508 6.97435 14.487 7.425C16.387 6.132 17.224 6.4 17.224 6.4C17.5874 7.23872 17.6231 8.18324 17.324 9.047C17.9972 9.77674 18.3641 10.7373 18.349 11.73C18.349 15.572 16.012 16.417 13.787 16.663C14.024 16.9061 14.2066 17.1967 14.323 17.5156C14.4394 17.8345 14.4867 18.1744 14.462 18.513C14.462 19.852 14.449 20.927 14.449 21.252C14.449 21.514 14.624 21.827 15.137 21.727C17.3976 20.9868 19.3197 19.464 20.5576 17.4329C21.7955 15.4017 22.2679 12.9954 21.8897 10.647C21.5115 8.29856 20.3076 6.16221 18.4947 4.62233C16.6817 3.08245 14.3787 2.24015 12 2.247Z" fill="currentColor"></path>
                     </svg>
                   </a>
@@ -137,7 +137,7 @@ export default function Loader() {
                     className="group relative w-12 h-12 bg-white/80 backdrop-blur-md text-[var(--color-text-primary)] rounded-lg border transition-all duration-300 hover:-translate-y-1 border-[var(--color-border-medium)] hover:border-[var(--color-border-dark)] flex items-center justify-center"
                     style={{ boxShadow: 'var(--shadow-secondary)' }}
                   >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10">
                       <path d="M7.358 5.125C7.94921 5.11855 8.53936 5.17655 9.118 5.298C9.60303 5.39731 10.0651 5.58694 10.48 5.857C10.8595 6.11488 11.1633 6.46943 11.36 6.884C11.5812 7.38307 11.6878 7.92534 11.672 8.471C11.6928 9.07325 11.5307 9.66768 11.207 10.176C10.8576 10.6678 10.3818 11.0562 9.83 11.3C10.5781 11.484 11.2357 11.9295 11.684 12.556C12.103 13.1984 12.3158 13.9534 12.294 14.72C12.3135 15.3317 12.1845 15.9391 11.918 16.49C11.6696 16.9833 11.3043 17.4083 10.854 17.728C10.3901 18.0518 9.87138 18.2889 9.323 18.428C8.75179 18.5824 8.16271 18.6607 7.571 18.661H1V5.132H7.358V5.125ZM16.584 16.275C16.8095 16.483 17.075 16.6429 17.3644 16.7449C17.6538 16.8468 17.9609 16.8887 18.267 16.868C18.7649 16.8799 19.2542 16.7366 19.667 16.458C19.9959 16.2597 20.2479 15.9558 20.382 15.596H22.755C22.4901 16.6159 21.8731 17.5092 21.013 18.118C20.1674 18.6456 19.1842 18.9104 18.188 18.879C17.4767 18.8898 16.7698 18.7653 16.105 18.512C15.5119 18.2781 14.9745 17.9221 14.528 17.467C14.091 16.999 13.7547 16.4462 13.54 15.843C13.3042 15.1749 13.1885 14.4704 13.198 13.762C13.1921 13.0633 13.3173 12.3696 13.567 11.717C13.7937 11.1057 14.1433 10.5475 14.5943 10.0767C15.0453 9.60594 15.588 9.23268 16.189 8.98C16.8315 8.70345 17.5256 8.56708 18.225 8.58C18.981 8.5592 19.7305 8.72401 20.408 9.06C21.0068 9.36607 21.5275 9.80532 21.93 10.344C22.3396 10.8967 22.6328 11.5268 22.792 12.196C22.9639 12.9101 23.0289 13.6458 22.985 14.379H15.933C15.9068 15.069 16.139 15.744 16.584 16.272V16.275ZM7.139 16.324C7.41824 16.3254 7.69683 16.2969 7.97 16.239C8.21772 16.1893 8.4547 16.0962 8.67 15.964C8.87388 15.8314 9.03858 15.6467 9.147 15.429C9.27504 15.154 9.33474 14.8521 9.321 14.549C9.34564 14.2727 9.3054 13.9945 9.20349 13.7365C9.10157 13.4785 8.94081 13.2479 8.734 13.063C8.27915 12.7512 7.73483 12.5967 7.184 12.623H3.967V16.337H7.139V16.324ZM19.617 11.143C19.415 10.9531 19.1761 10.8069 18.9151 10.7134C18.6541 10.62 18.3766 10.5814 18.1 10.6C17.7313 10.585 17.3644 10.6598 17.031 10.818C16.7674 10.9459 16.5355 11.1307 16.352 11.359C16.1863 11.5613 16.0638 11.7955 15.992 12.047C15.9286 12.2592 15.8874 12.4773 15.869 12.698H20.236C20.2023 12.1272 19.9832 11.5829 19.612 11.148V11.157L19.617 11.143ZM6.974 10.579C7.43934 10.5986 7.89834 10.4655 8.281 10.2C8.45987 10.0529 8.59978 9.86399 8.68838 9.65C8.77697 9.43601 8.81153 9.2035 8.789 8.973C8.79439 8.70605 8.73791 8.44148 8.624 8.2C8.51258 8.00811 8.35519 7.84694 8.166 7.731C7.96187 7.61276 7.73786 7.53278 7.505 7.495C7.25112 7.44764 6.99326 7.42487 6.735 7.427H3.957V10.58L6.974 10.579ZM15.317 6.032H20.79V7.366H15.317V6.032Z" fill="currentColor"></path>
                     </svg>
                   </a>
