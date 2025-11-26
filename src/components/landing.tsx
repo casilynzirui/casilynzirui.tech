@@ -7,31 +7,29 @@ import Image from "next/image";
 
 export default function Loader() {
   useEffect(() => {
-    // Initialize the loader after component mounts
-    const initLoader = () => {
-      if (typeof window !== 'undefined' && (window as any).gsap && (window as any).initLogoRevealLoader) {
-        // Call the loader function directly
+    let checkReady: NodeJS.Timeout | null = null;
+    let timeout: NodeJS.Timeout | null = null;
+
+    // Wait for GSAP and loader to be available
+    checkReady = setInterval(() => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      if ((window as any).gsap && (window as any).initLogoRevealLoader) {
+        if (checkReady) clearInterval(checkReady);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (window as any).initLogoRevealLoader();
       }
+    }, 100);
+
+    // Cleanup interval after 10 seconds
+    timeout = setTimeout(() => {
+      if (checkReady) clearInterval(checkReady);
+    }, 10000);
+
+    // Cleanup on unmount
+    return () => {
+      if (checkReady) clearInterval(checkReady);
+      if (timeout) clearTimeout(timeout);
     };
-
-    // Check if GSAP and loader are already loaded
-    if (typeof window !== 'undefined' && (window as any).gsap && (window as any).initLogoRevealLoader) {
-      initLoader();
-    } else {
-      // Wait for GSAP and loader to load
-      const checkReady = setInterval(() => {
-        if (typeof window !== 'undefined' && (window as any).gsap && (window as any).initLogoRevealLoader) {
-          clearInterval(checkReady);
-          initLoader();
-        }
-      }, 100);
-
-      // Cleanup interval after 10 seconds to prevent infinite checking
-      setTimeout(() => {
-        clearInterval(checkReady);
-      }, 10000);
-    }
   }, []);
 
   return (
@@ -39,15 +37,15 @@ export default function Loader() {
       {/* Load GSAP scripts first */}
       <Script 
         src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" 
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       <Script 
         src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js" 
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       <Script 
         src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" 
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       <Script 
         src="/osmo/loader.js" 
@@ -107,7 +105,7 @@ export default function Loader() {
 
                 <p className="text-base md:text-lg leading-relaxed max-w-xl text-[var(--color-text-primary)]">
                 My focus is on creating interfaces that feel natural and effortless, balancing aesthetics with usability.
-                I'm continually refining my craft, exploring how digital design can foster connection, spark delight, and make technology feel more human.
+                I&apos;m continually refining my craft, exploring how digital design can foster connection, spark delight, and make technology feel more human.
                 </p>
               </div>
               

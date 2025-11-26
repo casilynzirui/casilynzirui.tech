@@ -30,7 +30,7 @@ export default function About() {
 
                 <p className="text-base md:text-lg leading-relaxed max-w-xl text-[var(--color-text-primary)]">
                 My focus is on creating interfaces that feel natural and effortless, balancing aesthetics with usability.
-                I'm continually refining my craft, exploring how digital design can foster connection, spark delight, and make technology feel more human.
+                I&apos;m continually refining my craft, exploring how digital design can foster connection, spark delight, and make technology feel more human.
                 </p>
               </div>
               
